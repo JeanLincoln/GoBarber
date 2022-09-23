@@ -6,7 +6,7 @@ export function App() {
   return (
     <ThemeProvider theme={DefaultTheme}>
       <GlobalStyle />
-      <h1>Hello World</h1>
+      <h1>Hello world</h1>
     </ThemeProvider>
   )
 }
