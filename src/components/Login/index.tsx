@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-export function LoginPage() {
+export function Login() {
   return (
     <S.LoginContainer>
       <S.LoginFormContainer>
