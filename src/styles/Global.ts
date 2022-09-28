@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
     :focus{
         outline:0;
-        box-shadow: 0 0 0 2px ${(props) => props.theme['gray-900']};
+        /* box-shadow: 0 0 0 2px ${(props) => props.theme['orange-400']}; */
     }
 
     body{
@@ -22,9 +22,9 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing:antialiased;
     }
 
-    border-style, input, textarea, button, span, h2, a {
+    border-style, input,label, textarea, button, span, h2, a {
         font-family: 'Roboto Slab', sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1rem;
     }
 `
