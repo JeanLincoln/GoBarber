@@ -27,6 +27,7 @@ export function SignUp() {
       <S.ImageContainer />
       <S.SignUpFormContainer>
         <S.LogoContainer>
+          <span>Barbearia</span>
           <img src="images/GoBarber.svg" />
           <span>Cortes & Penteados</span>
         </S.LogoContainer>

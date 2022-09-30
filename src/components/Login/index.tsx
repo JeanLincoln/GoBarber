@@ -5,9 +5,9 @@ export function Login() {
     <S.LoginContainer>
       <S.LoginFormContainer>
         <S.LogoContainer>
-          <span>Awesome</span>
+          <span>Barbearia</span>
           <img src="images/GoBarber.svg" />
-          <span>Haircuts & shaves</span>
+          <span>Cortes & Penteados</span>
         </S.LogoContainer>
         <h2>Faça seu login</h2>
         <form>

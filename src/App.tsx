@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components'
-import { Schedules } from './components/Schedules'
+import { Header } from './components/Header'
 import { GlobalStyle } from './styles/Global'
 import { DefaultTheme } from './styles/themes/Default'
 
@@ -7,7 +7,7 @@ export function App() {
   return (
     <ThemeProvider theme={DefaultTheme}>
       <GlobalStyle />
-      <Schedules />
+      <Header />
     </ThemeProvider>
   )
 }
