@@ -5,10 +5,10 @@ import * as S from './styles'
 import { EnvelopeSimple, Lock, User } from 'phosphor-react'
 
 const NewUserValidationSchema = z.object({
-  UserType: z.enum(['clientUser', 'barberUser']),
-  Name: z.string().min(1, 'Informe a tarefa'),
-  Email: z.string().min(1, 'Informe o Email'),
-  Senha: z.string().min(1, 'infome a senha')
+  userType: z.enum(['clientUser', 'barberUser']),
+  name: z.string().min(1, 'Informe seu Nome'),
+  email: z.string().min(1, 'Informe o Email'),
+  senha: z.string().min(1, 'infome a senha')
 })
 
 type NewUserFormData = z.infer<typeof NewUserValidationSchema>
@@ -34,9 +34,8 @@ export function SignUp() {
         <form onSubmit={handleSubmit(handleCreateUser)}>
           <Controller
             control={control}
-            name="UserType"
+            name="userType"
             render={({ field }) => {
-              console.log(field)
               return (
                 <S.RadioContainer onValueChange={field.onChange}>
                   <S.RadioButton value="clientUser">Sou Cliente</S.RadioButton>
@@ -50,21 +49,21 @@ export function SignUp() {
             <input
               type="text"
               id="Name"
-              {...register('Name')}
+              {...register('name')}
               placeholder="Nome"
             />
             <EnvelopeSimple size={24} />
             <input
               type="email"
               id="Email"
-              {...register('Email')}
+              {...register('email')}
               placeholder="E-mail"
             />
             <Lock size={24} />
             <input
               type="password"
               id="Senha"
-              {...register('Senha')}
+              {...register('senha')}
               placeholder="Senha"
             />
           </S.inputContainer>
