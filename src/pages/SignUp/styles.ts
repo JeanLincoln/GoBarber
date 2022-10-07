@@ -23,13 +23,6 @@ export const SignUpContainer = styled.div`
         display: flex;
         align-items: center;
 
-        &::before {
-          width: 20px;
-          height: 20px;
-          margin-right: 1.6rem;
-          content: url('images/GoBackIcon.svg');
-        }
-
         &:hover {
           color: ${theme['orange-400']};
           transition: color 0.2s;
@@ -58,6 +51,20 @@ export const SignUpFormContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 34rem;
+  }
+
+  a[href='/'] {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+      margin-right: 1.6rem;
+      margin-top: 0.3rem;
+      content: url('images/GoBackIcon.svg');
+    }
   }
 `
 export const inputContainer = styled.div`

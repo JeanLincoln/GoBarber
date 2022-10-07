@@ -22,23 +22,23 @@ export const LoginContainer = styled.div`
       &:first-of-type {
         margin-bottom: 8rem;
       }
+    }
 
-      &:last-of-type {
-        color: ${theme['orange-500']};
-        display: flex;
-        align-items: center;
+    a[href='/signUp'] {
+      color: ${theme['orange-500']};
+      display: flex;
+      align-items: center;
 
-        &::before {
-          width: 20px;
-          height: 20px;
-          margin-right: 1.6rem;
-          content: url('images/Criar.svg');
-        }
+      &::before {
+        width: 20px;
+        height: 20px;
+        margin-right: 1.6rem;
+        content: url('images/Criar.svg');
+      }
 
-        &:hover {
-          color: ${theme['orange-400']};
-          transition: color 0.2s;
-        }
+      &:hover {
+        color: ${theme['orange-400']};
+        transition: color 0.2s;
       }
     }
   `}
@@ -101,7 +101,10 @@ export const LoginFormContainer = styled.div`
         }
       }
 
-      button {
+      a[type='submit'] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 5.6rem;
         margin-bottom: 2.4rem;
         border-radius: 10px;
@@ -109,6 +112,7 @@ export const LoginFormContainer = styled.div`
         font-size: 1.6rem;
         cursor: pointer;
         background-color: ${theme['orange-500']};
+        color: ${theme['gray-700']};
 
         &:hover {
           background-color: ${theme['orange-400']};

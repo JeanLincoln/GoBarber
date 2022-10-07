@@ -10,6 +10,15 @@ export const Header = styled.div`
     height: 14.4rem;
     width: 100%;
     background-color: ${theme['gray-800']};
+
+    a {
+      &::before {
+        width: 20px;
+        height: 20px;
+        margin-right: 1.6rem;
+        content: url('images/Sair.svg');
+      }
+    }
   `}
 `
 export const HeaderContainer = styled.div`

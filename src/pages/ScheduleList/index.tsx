@@ -1,13 +1,14 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Clock } from 'phosphor-react'
-import { Header } from '../Header'
-import { Schedule } from '../Schedule'
+
 import { DayPicker } from 'react-day-picker'
 import { useState } from 'react'
 import pt from 'date-fns/locale/pt-BR'
 import 'react-day-picker/dist/style.css'
 import * as S from './styles'
 import { format } from 'date-fns'
+import { Header } from '../../components/Header'
+import { Schedule } from '../../components/Schedule'
 
 const weekDays = [
   'Domingo',

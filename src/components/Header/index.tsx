@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import * as S from './styles'
 
 export function Header() {
@@ -17,7 +18,7 @@ export function Header() {
           </div>
         </S.UserContainer>
       </S.HeaderContainer>
-      <img src="images/Sair.svg" alt="" />
+      <NavLink to="/" />
     </S.Header>
   )
 }

@@ -1,6 +1,7 @@
+import { NavLink } from 'react-router-dom'
 import * as S from './styles'
 
-export function Login() {
+export function SignIn() {
   return (
     <S.LoginContainer>
       <S.LoginFormContainer>
@@ -13,10 +14,12 @@ export function Login() {
         <form>
           <input type="email" placeholder="E-mail" />
           <input type="password" placeholder="Senha" />
-          <button type="submit">Entrar</button>
+          <NavLink to="/scheduleList" type="submit">
+            Entrar
+          </NavLink>
         </form>
         <a href="#">Esqueci minha senha</a>
-        <a href="#">Criar conta</a>
+        <NavLink to="/signUp">Criar conta</NavLink>
       </S.LoginFormContainer>
       <S.ImageContainer />
     </S.LoginContainer>

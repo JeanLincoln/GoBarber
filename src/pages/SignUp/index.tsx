@@ -3,6 +3,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
 import * as S from './styles'
 import { EnvelopeSimple, Lock, User } from 'phosphor-react'
+import { NavLink } from 'react-router-dom'
 
 const NewUserValidationSchema = z.object({
   userType: z.enum(['clientUser', 'barberUser']),
@@ -67,10 +68,9 @@ export function SignUp() {
               placeholder="Senha"
             />
           </S.inputContainer>
-          <S.SubmitButton type="submit">Entrar</S.SubmitButton>
+          <S.SubmitButton type="submit">Criar Conta</S.SubmitButton>
         </form>
-        <a href="#">Esqueci minha senha</a>
-        <a href="#">Criar conta</a>
+        <NavLink to="/">Voltar para a tela de Login</NavLink>
       </S.SignUpFormContainer>
     </S.SignUpContainer>
   )
